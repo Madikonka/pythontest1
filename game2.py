@@ -4,13 +4,21 @@ def arrowy(astr):
     x = re.sub(r'<[-]+>', '', astr).replace(" ", "")
     y = re.sub(r'<[=]+>', '', x)
    # print(x)
-    print(y)
-    s=0
+    #print(y)
+    ss=0
+    oup=""
     for i in y:
-        if i==">":
-            s+=1
-        elif 
+        if i=="-":
+            ss+=1
+            oup+=oup
+        else:
+            oup=str(ss)+i
+            ss=0    
 
 
-arrowy("       1   sdjknv     <--->")
+    """count '-' in '-->' pattern """
+    print(oup)
+
+
+arrowy("-------> !! --->")
 
