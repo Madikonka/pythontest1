@@ -3,8 +3,7 @@ def arrowy(astr):
     #x = astr.replace('<'[-]+'>', "111111")
     x = re.sub(r'<[-]+>', '', astr).replace(" ", "")
     y = re.sub(r'<[=]+>', '', x)
-   # print(x)
-    #print(y)
+#new commit for main
     ss=0
     oup=""
     for i in y:
