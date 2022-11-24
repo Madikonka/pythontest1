@@ -10,7 +10,7 @@ def arrowy(astr):
     for i in y:
         if i=="-":
             ss+=1
-            oup+=oup
+            #oup+=oup
         else:
             oup=str(ss)+i
             ss=0    
