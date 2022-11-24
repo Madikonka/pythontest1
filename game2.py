@@ -7,16 +7,16 @@ def arrowy(astr):
     #print(y)
     ss=0
     oup=""
+    """count '-' in '-->' pattern """
     for i in y:
         if i=="-":
             ss+=1
-            #oup+=oup
         else:
             oup=str(ss)+i
             ss=0    
 
 
-    """count '-' in '-->' pattern """
+    
     print(oup)
 
 
