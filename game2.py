@@ -5,19 +5,21 @@ def arrowy(astr):
     y = re.sub(r'<[=]+>', '', x)
 #new commit for main
     ss=0
-    oup=""
+    oup=[]
     for i in y:
+       # if i=="1":
+         #   oup.append(i)  
         if i=="-":
             ss+=1
-            oup+=oup
         else:
-            oup=str(ss)+i
+            if ss!=0: oup.append(ss)            
+            if (i=="<"): oup.append(-1)
+            if (i==">"): oup.append(1)
             ss=0    
-
-
-    """count '-' in '-->' pattern """
     print(oup)
+   # print("------------------")
+    #for i in oup[::-2]:
+    #    print (i)
 
-
-arrowy("-------> !! --->")
+arrowy("<------- ... > >>---->")
 
